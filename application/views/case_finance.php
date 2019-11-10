@@ -27,144 +27,32 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="section_title text-center mb-60">
-                        <h3>Business Law</h3>
+                        <h3>Finance Case</h3>
                         <p>Many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some.</p>
                     </div>
                 </div>
             </div>
 
             <div class="row no-gutters">
+                
+                <?php foreach ($cases as $case): ?>
                 <div class="col-xl-3 col-md-6">
                     <div class="single_practice">
                         <div class="practice_image">
-                            <img src="https://www.freelogodesign.org/Content/img/logo-samples/flooop.png" alt="">
+                            <img src="<?php echo $case->photo; ?>" alt="">
                         </div>
                         <div class="practice_hover text-center">
                             <div class="hover_inner">
                                 <i class="flaticon-case"></i>
-                                <h3>Business Law</h3>
-                                <p>There are many variations of passages of <br> Lorem Ipsum available, <br> but the
-                                    majority have suffered</p>
+                                <h3><?php echo $case->title; ?></h3>
+                                <p><?php echo $case->description; ?></p>
                                 <a href="#" class="lern_more">Learn More</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="single_practice">
-                        <div class="practice_image">
-                            <img src="https://about.canva.com/wp-content/uploads/sites/3/2016/08/logos-1.png" alt="">
-                        </div>
-                        <div class="practice_hover text-center">
-                            <div class="hover_inner">
-                                <i class="flaticon-courthouse"></i>
-                                <h3>Finance Law</h3>
-                                <p>There are many variations of passages of <br> Lorem Ipsum available, <br> but the
-                                    majority have suffered</p>
-                                <a href="#" class="lern_more">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="single_practice">
-                        <div class="practice_image">
-                            <img src="https://about.canva.com/wp-content/uploads/sites/3/2016/08/logos-1.png" alt="">
-                        </div>
-                        <div class="practice_hover text-center">
-                            <div class="hover_inner">
-                                <i class="flaticon-judge"></i>
-                                <h3>Family Law</h3>
-                                <p>There are many variations of passages of <br> Lorem Ipsum available, <br> but the
-                                    majority have suffered</p>
-                                <a href="#" class="lern_more">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="single_practice">
-                        <div class="practice_image">
-                            <img src="https://www.freelogodesign.org/Content/img/logo-samples/flooop.png" alt="">
-                        </div>
-                        <div class="practice_hover text-center">
-                            <div class="hover_inner">
-                                <i class="flaticon-jury"></i>
-                                <h3>Education Law</h3>
-                                <p>There are many variations of passages of <br> Lorem Ipsum available, <br> but the
-                                    majority have suffered</p>
-                                <a href="#" class="lern_more">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <?php endforeach ?>
 
-            <div class="row no-gutters">
-                <div class="col-xl-3 col-md-6">
-                    <div class="single_practice">
-                        <div class="practice_image">
-                            <img src="https://www.freelogodesign.org/Content/img/logo-samples/flooop.png" alt="">
-                        </div>
-                        <div class="practice_hover text-center">
-                            <div class="hover_inner">
-                                <i class="flaticon-case"></i>
-                                <h3>Business Law</h3>
-                                <p>There are many variations of passages of <br> Lorem Ipsum available, <br> but the
-                                    majority have suffered</p>
-                                <a href="#" class="lern_more">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="single_practice">
-                        <div class="practice_image">
-                            <img src="https://about.canva.com/wp-content/uploads/sites/3/2016/08/logos-1.png" alt="">
-                        </div>
-                        <div class="practice_hover text-center">
-                            <div class="hover_inner">
-                                <i class="flaticon-courthouse"></i>
-                                <h3>Finance Law</h3>
-                                <p>There are many variations of passages of <br> Lorem Ipsum available, <br> but the
-                                    majority have suffered</p>
-                                <a href="#" class="lern_more">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="single_practice">
-                        <div class="practice_image">
-                            <img src="https://about.canva.com/wp-content/uploads/sites/3/2016/08/logos-1.png" alt="">
-                        </div>
-                        <div class="practice_hover text-center">
-                            <div class="hover_inner">
-                                <i class="flaticon-judge"></i>
-                                <h3>Family Law</h3>
-                                <p>There are many variations of passages of <br> Lorem Ipsum available, <br> but the
-                                    majority have suffered</p>
-                                <a href="#" class="lern_more">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="single_practice">
-                        <div class="practice_image">
-                            <img src="https://www.freelogodesign.org/Content/img/logo-samples/flooop.png" alt="">
-                        </div>
-                        <div class="practice_hover text-center">
-                            <div class="hover_inner">
-                                <i class="flaticon-jury"></i>
-                                <h3>Education Law</h3>
-                                <p>There are many variations of passages of <br> Lorem Ipsum available, <br> but the
-                                    majority have suffered</p>
-                                <a href="#" class="lern_more">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

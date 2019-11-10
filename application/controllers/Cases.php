@@ -18,6 +18,12 @@ class Cases extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+
+	public function __construct() {
+        parent::__construct();
+		$this->load->model('mcases');
+	}
+
 	public function index()
 	{
 		$this->load->view('cases');
@@ -25,21 +31,25 @@ class Cases extends CI_Controller {
 
 	public function business()
 	{
-		$this->load->view('case_business');
+		$data['cases'] = $this->mcases->getBusinessCase();
+		$this->load->view('case_business', $data);
 	}
 
 	public function education()
 	{
-		$this->load->view('case_education');
+		$data['cases'] = $this->mcases->getEducationCase();
+		$this->load->view('case_education', $data);
 	}
 
 	public function family()
 	{
-		$this->load->view('case_family');
+		$data['cases'] = $this->mcases->getFamilyCase();
+		$this->load->view('case_family', $data);
 	}
 
 	public function finance()
 	{
-		$this->load->view('case_finance');
+		$data['cases'] = $this->mcases->getFinanceCase();
+		$this->load->view('case_finance', $data);
 	}
 }

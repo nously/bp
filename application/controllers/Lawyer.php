@@ -18,13 +18,20 @@ class Lawyer extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	public function __construct() {
+		parent::__construct();
+		$this->load->model('lawyers');
+	}
+	
 	public function index()
 	{
-		$this->load->view('lawyer');
+		$data['lawyers'] = $this->lawyers->getAll();
+		$this->load->view('lawyer', $data);
 	}
 
 	public function education()
 	{
-		$this->load->view('lawyer_education');
+		$data['lawyers'] = $this->lawyers->getLawyerEducation();
+		$this->load->view('lawyer_education', $data);
 	}
 }
